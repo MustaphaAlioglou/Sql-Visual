@@ -30,7 +30,6 @@ namespace Sql
         private void InitializeComponent()
         {
             this.txtServer = new System.Windows.Forms.TextBox();
-            this.txtDatabase = new System.Windows.Forms.TextBox();
             this.txtUid = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,38 +40,39 @@ namespace Sql
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
+            this.txtDatabase = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtServer
             // 
-            this.txtServer.Location = new System.Drawing.Point(102, 30);
+            this.txtServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtServer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServer.Location = new System.Drawing.Point(15, 44);
             this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(269, 20);
+            this.txtServer.Size = new System.Drawing.Size(269, 17);
             this.txtServer.TabIndex = 0;
-            // 
-            // txtDatabase
-            // 
-            this.txtDatabase.Location = new System.Drawing.Point(102, 108);
-            this.txtDatabase.MaximumSize = new System.Drawing.Size(269, 20);
-            this.txtDatabase.MinimumSize = new System.Drawing.Size(269, 20);
-            this.txtDatabase.Name = "txtDatabase";
-            this.txtDatabase.Size = new System.Drawing.Size(269, 20);
-            this.txtDatabase.TabIndex = 1;
             // 
             // txtUid
             // 
-            this.txtUid.Location = new System.Drawing.Point(102, 56);
+            this.txtUid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtUid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUid.Location = new System.Drawing.Point(15, 85);
             this.txtUid.Name = "txtUid";
-            this.txtUid.Size = new System.Drawing.Size(269, 20);
+            this.txtUid.Size = new System.Drawing.Size(269, 17);
             this.txtUid.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(102, 82);
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(15, 126);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(269, 20);
+            this.txtPassword.Size = new System.Drawing.Size(269, 17);
             this.txtPassword.TabIndex = 3;
             // 
             // button1
@@ -82,9 +82,9 @@ namespace Sql
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(102, 134);
+            this.button1.Location = new System.Drawing.Point(108, 190);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(269, 38);
+            this.button1.Size = new System.Drawing.Size(176, 38);
             this.button1.TabIndex = 4;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
@@ -95,7 +95,7 @@ namespace Sql
             this.Server.AutoSize = true;
             this.Server.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Server.ForeColor = System.Drawing.Color.White;
-            this.Server.Location = new System.Drawing.Point(12, 30);
+            this.Server.Location = new System.Drawing.Point(12, 23);
             this.Server.Name = "Server";
             this.Server.Size = new System.Drawing.Size(51, 18);
             this.Server.TabIndex = 5;
@@ -106,7 +106,7 @@ namespace Sql
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 56);
+            this.label2.Location = new System.Drawing.Point(12, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(22, 18);
             this.label2.TabIndex = 6;
@@ -117,7 +117,7 @@ namespace Sql
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 82);
+            this.label3.Location = new System.Drawing.Point(12, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 18);
             this.label3.TabIndex = 7;
@@ -128,7 +128,7 @@ namespace Sql
             this.Database.AutoSize = true;
             this.Database.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Database.ForeColor = System.Drawing.Color.White;
-            this.Database.Location = new System.Drawing.Point(14, 110);
+            this.Database.Location = new System.Drawing.Point(12, 146);
             this.Database.Name = "Database";
             this.Database.Size = new System.Drawing.Size(71, 18);
             this.Database.TabIndex = 8;
@@ -142,7 +142,7 @@ namespace Sql
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(347, 0);
+            this.button2.Location = new System.Drawing.Point(257, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 20);
             this.button2.TabIndex = 3;
@@ -157,7 +157,7 @@ namespace Sql
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(382, 20);
+            this.panel1.Size = new System.Drawing.Size(292, 20);
             this.panel1.TabIndex = 26;
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -168,7 +168,7 @@ namespace Sql
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(9, 134);
+            this.button3.Location = new System.Drawing.Point(15, 190);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 38);
             this.button3.TabIndex = 27;
@@ -176,12 +176,24 @@ namespace Sql
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // txtDatabase
+            // 
+            this.txtDatabase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtDatabase.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDatabase.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDatabase.Location = new System.Drawing.Point(15, 167);
+            this.txtDatabase.Name = "txtDatabase";
+            this.txtDatabase.PasswordChar = '•';
+            this.txtDatabase.Size = new System.Drawing.Size(269, 17);
+            this.txtDatabase.TabIndex = 28;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(382, 184);
+            this.ClientSize = new System.Drawing.Size(292, 242);
+            this.Controls.Add(this.txtDatabase);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Database);
@@ -191,7 +203,6 @@ namespace Sql
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUid);
-            this.Controls.Add(this.txtDatabase);
             this.Controls.Add(this.txtServer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -207,7 +218,6 @@ namespace Sql
         #endregion
 
         private System.Windows.Forms.TextBox txtServer;
-        private System.Windows.Forms.TextBox txtDatabase;
         private System.Windows.Forms.TextBox txtUid;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button button1;
@@ -218,5 +228,6 @@ namespace Sql
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtDatabase;
     }
 }

@@ -45,17 +45,19 @@ namespace Sql
             this.lvUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvUsers.BackColor = System.Drawing.Color.Silver;
+            this.lvUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.lvUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvUsers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
+            this.lvUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lvUsers.HideSelection = false;
             this.lvUsers.Location = new System.Drawing.Point(0, 19);
             this.lvUsers.Name = "lvUsers";
-            this.lvUsers.Size = new System.Drawing.Size(384, 438);
+            this.lvUsers.Size = new System.Drawing.Size(414, 490);
             this.lvUsers.TabIndex = 0;
             this.lvUsers.UseCompatibleStateImageBehavior = false;
             this.lvUsers.View = System.Windows.Forms.View.Details;
@@ -77,12 +79,12 @@ namespace Sql
             // columnHeader4
             // 
             this.columnHeader4.Text = "time";
-            this.columnHeader4.Width = 109;
+            this.columnHeader4.Width = 133;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "table";
-            this.columnHeader5.Width = 93;
+            this.columnHeader5.Width = 78;
             // 
             // button2
             // 
@@ -92,7 +94,7 @@ namespace Sql
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(349, 0);
+            this.button2.Location = new System.Drawing.Point(379, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(35, 20);
             this.button2.TabIndex = 3;
@@ -107,7 +109,7 @@ namespace Sql
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(384, 20);
+            this.panel1.Size = new System.Drawing.Size(414, 20);
             this.panel1.TabIndex = 27;
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -115,7 +117,8 @@ namespace Sql
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 455);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(414, 509);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lvUsers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

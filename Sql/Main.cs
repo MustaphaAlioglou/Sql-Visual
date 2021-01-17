@@ -125,7 +125,6 @@ namespace Sql
             {
                 ListViewItem item = lvUsers.SelectedItems[0];
                 currUser = (User)item.Tag;
-
                 int id = currUser.Id;
                 String u = currUser.firstname;
                 String p = currUser.lastname;
@@ -161,6 +160,11 @@ namespace Sql
                 return true;
             }
             return false;
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            LoadAll();
         }
     }
 }

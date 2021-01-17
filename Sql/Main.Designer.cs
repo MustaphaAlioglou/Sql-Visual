@@ -54,6 +54,7 @@ namespace Sql
             // 
             // txtAge
             // 
+            this.txtAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAge.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.Location = new System.Drawing.Point(65, 130);
@@ -68,10 +69,10 @@ namespace Sql
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(65, 272);
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnDelete.Location = new System.Drawing.Point(8, 272);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(232, 31);
+            this.btnDelete.Size = new System.Drawing.Size(289, 31);
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -79,6 +80,7 @@ namespace Sql
             // 
             // txtLastname
             // 
+            this.txtLastname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLastname.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastname.Location = new System.Drawing.Point(65, 100);
@@ -89,6 +91,7 @@ namespace Sql
             // 
             // txtFirstname
             // 
+            this.txtFirstname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtFirstname.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstname.Location = new System.Drawing.Point(65, 70);
@@ -99,7 +102,7 @@ namespace Sql
             // 
             // txtId
             // 
-            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtId.BackColor = System.Drawing.Color.Silver;
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(65, 40);
@@ -114,10 +117,10 @@ namespace Sql
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(65, 235);
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnUpdate.Location = new System.Drawing.Point(8, 235);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(232, 31);
+            this.btnUpdate.Size = new System.Drawing.Size(289, 31);
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -129,10 +132,10 @@ namespace Sql
             this.btnInsert.FlatAppearance.BorderSize = 0;
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.ForeColor = System.Drawing.Color.White;
-            this.btnInsert.Location = new System.Drawing.Point(65, 198);
+            this.btnInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnInsert.Location = new System.Drawing.Point(8, 198);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(232, 31);
+            this.btnInsert.Size = new System.Drawing.Size(289, 31);
             this.btnInsert.TabIndex = 17;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -144,19 +147,19 @@ namespace Sql
             this.btnLoadAll.FlatAppearance.BorderSize = 0;
             this.btnLoadAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadAll.ForeColor = System.Drawing.Color.White;
-            this.btnLoadAll.Location = new System.Drawing.Point(65, 161);
+            this.btnLoadAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnLoadAll.Location = new System.Drawing.Point(8, 161);
             this.btnLoadAll.Name = "btnLoadAll";
-            this.btnLoadAll.Size = new System.Drawing.Size(232, 31);
+            this.btnLoadAll.Size = new System.Drawing.Size(289, 31);
             this.btnLoadAll.TabIndex = 16;
-            this.btnLoadAll.Text = "Load all";
+            this.btnLoadAll.Text = "Load / Update";
             this.btnLoadAll.UseVisualStyleBackColor = false;
             this.btnLoadAll.Click += new System.EventHandler(this.btnLoadAll_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Location = new System.Drawing.Point(5, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
@@ -166,7 +169,7 @@ namespace Sql
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(5, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
@@ -176,7 +179,7 @@ namespace Sql
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(6, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(19, 13);
@@ -188,18 +191,20 @@ namespace Sql
             this.lvUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvUsers.BackColor = System.Drawing.Color.Silver;
+            this.lvUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.lvUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvUsers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.LVId,
             this.LVFirstname,
             this.LVPassword,
             this.LVAge});
+            this.lvUsers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.lvUsers.FullRowSelect = true;
             this.lvUsers.HideSelection = false;
             this.lvUsers.Location = new System.Drawing.Point(303, 20);
             this.lvUsers.MultiSelect = false;
             this.lvUsers.Name = "lvUsers";
-            this.lvUsers.Size = new System.Drawing.Size(432, 297);
+            this.lvUsers.Size = new System.Drawing.Size(456, 366);
             this.lvUsers.TabIndex = 12;
             this.lvUsers.UseCompatibleStateImageBehavior = false;
             this.lvUsers.View = System.Windows.Forms.View.Details;
@@ -223,11 +228,12 @@ namespace Sql
             // LVAge
             // 
             this.LVAge.Text = "Age";
+            this.LVAge.Width = 65;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.Location = new System.Drawing.Point(6, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 13);
@@ -242,7 +248,7 @@ namespace Sql
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(700, 0);
+            this.button1.Location = new System.Drawing.Point(724, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 20);
             this.button1.TabIndex = 3;
@@ -258,7 +264,7 @@ namespace Sql
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(735, 20);
+            this.panel1.Size = new System.Drawing.Size(759, 20);
             this.panel1.TabIndex = 25;
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -282,7 +288,7 @@ namespace Sql
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(735, 315);
+            this.ClientSize = new System.Drawing.Size(759, 384);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAge);
@@ -300,7 +306,9 @@ namespace Sql
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(759, 470);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
