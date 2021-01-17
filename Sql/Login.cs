@@ -63,5 +63,14 @@ namespace Sql
             ReleaseCapture();
             SendMessage(Handle, aa, bb, 0);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtServer.Text = "dspai.kastoria.teiwm.gr";
+            txtUid.Text = "k702760";
+            txtPassword.Text = "K@$t0r1@";
+            txtDatabase.Text = "world";
+            button1.PerformClick();
+        }
     }
 }

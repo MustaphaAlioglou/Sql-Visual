@@ -48,6 +48,7 @@ namespace Sql
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -198,7 +199,7 @@ namespace Sql
             this.lvUsers.Location = new System.Drawing.Point(315, 20);
             this.lvUsers.MultiSelect = false;
             this.lvUsers.Name = "lvUsers";
-            this.lvUsers.Size = new System.Drawing.Size(505, 448);
+            this.lvUsers.Size = new System.Drawing.Size(444, 452);
             this.lvUsers.TabIndex = 12;
             this.lvUsers.UseCompatibleStateImageBehavior = false;
             this.lvUsers.View = System.Windows.Forms.View.Details;
@@ -212,12 +213,12 @@ namespace Sql
             // LVFirstname
             // 
             this.LVFirstname.Text = "Firstname";
-            this.LVFirstname.Width = 120;
+            this.LVFirstname.Width = 157;
             // 
             // LVPassword
             // 
             this.LVPassword.Text = "Lastname";
-            this.LVPassword.Width = 141;
+            this.LVPassword.Width = 152;
             // 
             // LVAge
             // 
@@ -241,7 +242,7 @@ namespace Sql
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(785, 0);
+            this.button1.Location = new System.Drawing.Point(724, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 20);
             this.button1.TabIndex = 3;
@@ -252,20 +253,36 @@ namespace Sql
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(820, 20);
+            this.panel1.Size = new System.Drawing.Size(759, 20);
             this.panel1.TabIndex = 25;
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, -1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 23);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Show Logs";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(820, 470);
+            this.ClientSize = new System.Drawing.Size(759, 470);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAge);
@@ -281,8 +298,8 @@ namespace Sql
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lvUsers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(820, 470);
-            this.MinimumSize = new System.Drawing.Size(820, 470);
+            this.MaximumSize = new System.Drawing.Size(759, 470);
+            this.MinimumSize = new System.Drawing.Size(759, 470);
             this.Name = "Main";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -312,6 +329,7 @@ namespace Sql
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

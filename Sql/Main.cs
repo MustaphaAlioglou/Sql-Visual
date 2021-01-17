@@ -133,5 +133,11 @@ namespace Sql
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Logs ee = new Logs();
+            ee.ShowDialog();
+        }
     }
 }
