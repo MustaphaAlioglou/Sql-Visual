@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -11,11 +12,20 @@ using moose;
 
 namespace Sql
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
+        public const int aa = 0xA1;
+        public const int bb = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr iptr, int msg, int wparam, int iparam);
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int ReleaseCapture();
+
         private User currUser;
 
-        public Form1()
+        public Main()
         {
             InitializeComponent();
             User.InitializeDB();
@@ -111,6 +121,17 @@ namespace Sql
                 txtPassword.Text = p;
                 txtAge.Text = a.ToString();
             }
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(Handle, aa, bb, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

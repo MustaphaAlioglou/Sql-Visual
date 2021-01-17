@@ -5,16 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Sql;
 
 namespace moose
 {
     internal class User
     {   //database stuff
-        private const String SERVER = "dspai.kastoria.teiwm.gr";
+        //private const String SERVER = "dspai.kastoria.teiwm.gr";
 
-        private const String DATABASE = "world";
-        private const String UID = "k702760";
-        private const String PASSWORD = "K@$t0r1@";
+        //private const String DATABASE = "world";
+        //private const String UID = "k702760";
+        //private const String PASSWORD = "K@$t0r1@";
         private static MySqlConnection dbConn;
 
         // User class stuff
@@ -24,6 +25,7 @@ namespace moose
 
         public String lastname { get; private set; }
         public int age { get; private set; }
+        private static LoginCred yy = LoginCred.GetInstance();
 
         private User(int id, String u, String p, int a)
         {
@@ -35,15 +37,7 @@ namespace moose
 
         public static void InitializeDB()
         {
-            MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
-            builder.Server = SERVER;
-            builder.UserID = UID;
-            builder.Password = PASSWORD;
-            builder.Database = DATABASE;
-
-            String connString = builder.ToString();
-
-            builder = null;
+            String connString = yy.Creds;
 
             Console.WriteLine(connString);
 
