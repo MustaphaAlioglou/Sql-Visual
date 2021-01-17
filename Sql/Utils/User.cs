@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Sql;
+using System.Diagnostics;
 
 namespace moose
 {
     internal class User
-    {   //database stuff
-        //private const String SERVER = "dspai.kastoria.teiwm.gr";
-
-        //private const String DATABASE = "world";
-        //private const String UID = "k702760";
-        //private const String PASSWORD = "K@$t0r1@";
+    {
         private static MySqlConnection dbConn;
 
-        // User class stuff
         public int Id { get; private set; }
 
         public String firstname { get; private set; }
@@ -27,19 +22,19 @@ namespace moose
         public int age { get; private set; }
         private static LoginCred yy = LoginCred.GetInstance();
 
-        private User(int id, String u, String p, int a)
+        private User(int id, String firstname, String lastname, int age)
         {
             Id = id;
-            firstname = u;
-            lastname = p;
-            age = a;
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.age = age;
         }
 
         public static void InitializeDB()
         {
             String connString = yy.Creds;
 
-            Console.WriteLine(connString);
+            Debug.WriteLine(connString);
 
             dbConn = new MySqlConnection(connString);
 
@@ -83,9 +78,9 @@ namespace moose
             return users;
         }
 
-        public static User Insert(String u, String p, int a)
+        public static User Insert(String firstname, String lastname, int age)
         {
-            String query = string.Format("INSERT INTO Mustapha(firstname, lastname,age) VALUES ('{0}', '{1}', '{2}')", u, p, a);
+            String query = string.Format("INSERT INTO Mustapha(firstname, lastname,age) VALUES ('{0}', '{1}', '{2}')", firstname, lastname, age);
 
             MySqlCommand cmd = new MySqlCommand(query, dbConn);
 
@@ -94,16 +89,16 @@ namespace moose
             cmd.ExecuteNonQuery();
             int id = (int)cmd.LastInsertedId;
 
-            User user = new User(id, u, p, a);
+            User user = new User(id, firstname, lastname, age);
 
             dbConn.Close();
 
             return user;
         }
 
-        public void Update(string u, string p, int a)
+        public void Update(string firstname, string lastname, int age)
         {
-            String query = string.Format("UPDATE Mustapha SET firstname='{0}', lastname='{1}', age ='{3}' WHERE ID={2}", u, p, Id, a);
+            String query = string.Format("UPDATE Mustapha SET firstname='{0}', lastname='{1}', age ='{3}' WHERE ID={2}", firstname, lastname, Id, age);
 
             MySqlCommand cmd = new MySqlCommand(query, dbConn);
 
@@ -117,13 +112,9 @@ namespace moose
         public void Delete()
         {
             String query = string.Format("DELETE FROM Mustapha WHERE id={0}", Id);
-
             MySqlCommand cmd = new MySqlCommand(query, dbConn);
-
             dbConn.Open();
-
             cmd.ExecuteNonQuery();
-
             dbConn.Close();
         }
     }

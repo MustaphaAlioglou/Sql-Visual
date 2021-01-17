@@ -34,25 +34,23 @@ namespace Sql
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;
-            // "server=127.0.0.1;uid=root;pwd=12345;database=test"
             string ee = string.Format("server={0};uid={1};pwd={2};database={3};", txtServer.Text, txtUid.Text, txtPassword.Text, txtDatabase.Text);
             LoginCred tt = LoginCred.GetInstance();
-            tt.Creds = ee;
             MySqlConnection dbConn;
+
             dbConn = new MySqlConnection(ee);
             try
             {
                 dbConn.Open();
+                tt.Creds = ee;
+                Hide();
+                Main form1 = new Main();
+                form1.Show();
             }
             catch (MySql.Data.MySqlClient.MySqlException)
             {
                 MessageBox.Show("False credentials");
-                Application.Exit();
             }
-            Hide();
-            Main form1 = new Main();
-            form1.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
