@@ -31,8 +31,8 @@ namespace Sql
         {
             this.txtAge = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtLastname = new System.Windows.Forms.TextBox();
+            this.txtFirstname = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@ namespace Sql
             // 
             this.txtAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAge.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.Location = new System.Drawing.Point(77, 122);
+            this.txtAge.Location = new System.Drawing.Point(65, 130);
             this.txtAge.MaxLength = 20;
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(232, 25);
@@ -69,40 +69,40 @@ namespace Sql
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(11, 287);
+            this.btnDelete.Location = new System.Drawing.Point(65, 272);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(298, 31);
+            this.btnDelete.Size = new System.Drawing.Size(232, 31);
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // txtPassword
+            // txtLastname
             // 
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(77, 92);
-            this.txtPassword.MaxLength = 20;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(232, 25);
-            this.txtPassword.TabIndex = 21;
+            this.txtLastname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtLastname.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastname.Location = new System.Drawing.Point(65, 100);
+            this.txtLastname.MaxLength = 20;
+            this.txtLastname.Name = "txtLastname";
+            this.txtLastname.Size = new System.Drawing.Size(232, 25);
+            this.txtLastname.TabIndex = 21;
             // 
-            // txtUsername
+            // txtFirstname
             // 
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(77, 62);
-            this.txtUsername.MaxLength = 20;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(232, 25);
-            this.txtUsername.TabIndex = 20;
+            this.txtFirstname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFirstname.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstname.Location = new System.Drawing.Point(65, 70);
+            this.txtFirstname.MaxLength = 20;
+            this.txtFirstname.Name = "txtFirstname";
+            this.txtFirstname.Size = new System.Drawing.Size(232, 25);
+            this.txtFirstname.TabIndex = 20;
             // 
             // txtId
             // 
             this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(77, 32);
+            this.txtId.Location = new System.Drawing.Point(65, 40);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(232, 25);
@@ -115,9 +115,9 @@ namespace Sql
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(11, 250);
+            this.btnUpdate.Location = new System.Drawing.Point(65, 235);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(298, 31);
+            this.btnUpdate.Size = new System.Drawing.Size(232, 31);
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -130,9 +130,9 @@ namespace Sql
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.Color.White;
-            this.btnInsert.Location = new System.Drawing.Point(11, 213);
+            this.btnInsert.Location = new System.Drawing.Point(65, 198);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(298, 31);
+            this.btnInsert.Size = new System.Drawing.Size(232, 31);
             this.btnInsert.TabIndex = 17;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -145,9 +145,9 @@ namespace Sql
             this.btnLoadAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadAll.ForeColor = System.Drawing.Color.White;
-            this.btnLoadAll.Location = new System.Drawing.Point(11, 176);
+            this.btnLoadAll.Location = new System.Drawing.Point(65, 161);
             this.btnLoadAll.Name = "btnLoadAll";
-            this.btnLoadAll.Size = new System.Drawing.Size(298, 31);
+            this.btnLoadAll.Size = new System.Drawing.Size(232, 31);
             this.btnLoadAll.TabIndex = 16;
             this.btnLoadAll.Text = "Load all";
             this.btnLoadAll.UseVisualStyleBackColor = false;
@@ -157,7 +157,7 @@ namespace Sql
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(8, 92);
+            this.label3.Location = new System.Drawing.Point(5, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 15;
@@ -167,7 +167,7 @@ namespace Sql
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 62);
+            this.label2.Location = new System.Drawing.Point(5, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 14;
@@ -177,7 +177,7 @@ namespace Sql
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 35);
+            this.label1.Location = new System.Drawing.Point(6, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(19, 13);
             this.label1.TabIndex = 13;
@@ -196,10 +196,10 @@ namespace Sql
             this.LVAge});
             this.lvUsers.FullRowSelect = true;
             this.lvUsers.HideSelection = false;
-            this.lvUsers.Location = new System.Drawing.Point(315, 20);
+            this.lvUsers.Location = new System.Drawing.Point(303, 20);
             this.lvUsers.MultiSelect = false;
             this.lvUsers.Name = "lvUsers";
-            this.lvUsers.Size = new System.Drawing.Size(444, 452);
+            this.lvUsers.Size = new System.Drawing.Size(432, 297);
             this.lvUsers.TabIndex = 12;
             this.lvUsers.UseCompatibleStateImageBehavior = false;
             this.lvUsers.View = System.Windows.Forms.View.Details;
@@ -228,7 +228,7 @@ namespace Sql
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(9, 122);
+            this.label4.Location = new System.Drawing.Point(6, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 24;
@@ -242,7 +242,7 @@ namespace Sql
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(724, 0);
+            this.button1.Location = new System.Drawing.Point(700, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 20);
             this.button1.TabIndex = 3;
@@ -258,7 +258,7 @@ namespace Sql
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(759, 20);
+            this.panel1.Size = new System.Drawing.Size(735, 20);
             this.panel1.TabIndex = 25;
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -282,13 +282,13 @@ namespace Sql
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.ClientSize = new System.Drawing.Size(759, 470);
+            this.ClientSize = new System.Drawing.Size(735, 315);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtLastname);
+            this.Controls.Add(this.txtFirstname);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
@@ -299,7 +299,6 @@ namespace Sql
             this.Controls.Add(this.lvUsers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(759, 470);
-            this.MinimumSize = new System.Drawing.Size(759, 470);
             this.Name = "Main";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
@@ -312,8 +311,8 @@ namespace Sql
 
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtLastname;
+        private System.Windows.Forms.TextBox txtFirstname;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;

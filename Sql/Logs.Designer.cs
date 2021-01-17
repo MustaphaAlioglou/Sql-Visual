@@ -45,7 +45,7 @@ namespace Sql
             this.lvUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lvUsers.BackColor = System.Drawing.Color.Silver;
             this.lvUsers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -63,10 +63,12 @@ namespace Sql
             // columnHeader1
             // 
             this.columnHeader1.Text = "id";
+            this.columnHeader1.Width = 39;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "user";
+            this.columnHeader2.Width = 84;
             // 
             // columnHeader3
             // 
@@ -75,10 +77,12 @@ namespace Sql
             // columnHeader4
             // 
             this.columnHeader4.Text = "time";
+            this.columnHeader4.Width = 109;
             // 
             // columnHeader5
             // 
             this.columnHeader5.Text = "table";
+            this.columnHeader5.Width = 93;
             // 
             // button2
             // 

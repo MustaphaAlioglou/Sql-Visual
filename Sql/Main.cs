@@ -48,33 +48,47 @@ namespace Sql
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            String u = txtUsername.Text;
-            String p = txtPassword.Text;
-            int a = Convert.ToInt32(txtAge.Text);
-            if (String.IsNullOrEmpty(u) || String.IsNullOrEmpty(p))
+            if (isEmpty())
             {
-                MessageBox.Show("It's empty");
-                return;
+                MessageBox.Show("Please Load and Select an Index", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else
+            {
+                String u = txtFirstname.Text;
+                String p = txtLastname.Text;
+                int a = Convert.ToInt32(txtAge.Text);
+                if (String.IsNullOrEmpty(u) || String.IsNullOrEmpty(p))
+                {
+                    MessageBox.Show("It's empty");
+                    return;
+                }
 
-            currUser = User.Insert(u, p, a);
-            LoadAll();
+                currUser = User.Insert(u, p, a);
+                LoadAll();
+            }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            String u = txtUsername.Text;
-            String p = txtPassword.Text;
-            int age = Convert.ToInt32(txtAge.Text);
-            if (String.IsNullOrEmpty(u) || String.IsNullOrEmpty(p))
+            if (isEmpty())
             {
-                MessageBox.Show("It's empty");
-                return;
+                MessageBox.Show("Please Load and Select an Index", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else
+            {
+                String u = txtFirstname.Text;
+                String p = txtLastname.Text;
+                int age = Convert.ToInt32(txtAge.Text);
+                if (String.IsNullOrEmpty(u) || String.IsNullOrEmpty(p))
+                {
+                    MessageBox.Show("It's empty");
+                    return;
+                }
 
-            currUser.Update(u, p, age);
+                currUser.Update(u, p, age);
 
-            LoadAll();
+                LoadAll();
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -116,9 +130,9 @@ namespace Sql
                 String u = currUser.firstname;
                 String p = currUser.lastname;
                 int a = currUser.age;
-                txtUsername.Text = u;
+                txtFirstname.Text = u;
                 txtId.Text = id.ToString();
-                txtPassword.Text = p;
+                txtLastname.Text = p;
                 txtAge.Text = a.ToString();
             }
         }
@@ -138,6 +152,15 @@ namespace Sql
         {
             Logs ee = new Logs();
             ee.ShowDialog();
+        }
+
+        private bool isEmpty()
+        {
+            if (txtId.Text == "")
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
