@@ -98,23 +98,46 @@ namespace moose
 
         public void Update(string firstname, string lastname, int age)
         {
-            String query = string.Format("UPDATE Mustapha SET firstname='{0}', lastname='{1}', age ='{3}' WHERE ID={2}", firstname, lastname, Id, age);
+            MySqlTransaction trans = null;
+            trans = dbConn.BeginTransaction();
+            try
+            {
+                String query = string.Format("UPDATE Mustapha SET firstname='{0}', lastname='{1}', age ='{3}' WHERE ID={2}", firstname, lastname, Id, age);
 
-            MySqlCommand cmd = new MySqlCommand(query, dbConn);
+                MySqlCommand cmd = new MySqlCommand(query, dbConn);
+                cmd.Transaction = trans;
 
-            dbConn.Open();
+                dbConn.Open();
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                trans.Rollback();
+                MessageBox.Show("Rollback" + ex.ToString());
+            }
 
             dbConn.Close();
         }
 
         public void Delete()
         {
-            String query = string.Format("DELETE FROM Mustapha WHERE id={0}", Id);
-            MySqlCommand cmd = new MySqlCommand(query, dbConn);
-            dbConn.Open();
-            cmd.ExecuteNonQuery();
+            MySqlTransaction trans = null;
+            trans = dbConn.BeginTransaction();
+            try
+            {
+                String query = string.Format("DELETE FROM Mustapha WHERE id={0}", Id);
+                MySqlCommand cmd = new MySqlCommand(query, dbConn);
+                dbConn.Open();
+                cmd.ExecuteNonQuery();
+                trans.Commit();
+            }
+            catch (Exception ex)
+            {
+                trans.Rollback();
+                MessageBox.Show("Rollback" + ex.ToString());
+            }
             dbConn.Close();
         }
     }

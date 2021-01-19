@@ -152,7 +152,7 @@ namespace Sql
             this.btnLoadAll.Name = "btnLoadAll";
             this.btnLoadAll.Size = new System.Drawing.Size(289, 31);
             this.btnLoadAll.TabIndex = 16;
-            this.btnLoadAll.Text = "Load / Update";
+            this.btnLoadAll.Text = "Load / Update List View";
             this.btnLoadAll.UseVisualStyleBackColor = false;
             this.btnLoadAll.Click += new System.EventHandler(this.btnLoadAll_Click);
             // 
@@ -204,7 +204,7 @@ namespace Sql
             this.lvUsers.Location = new System.Drawing.Point(303, 20);
             this.lvUsers.MultiSelect = false;
             this.lvUsers.Name = "lvUsers";
-            this.lvUsers.Size = new System.Drawing.Size(456, 366);
+            this.lvUsers.Size = new System.Drawing.Size(456, 364);
             this.lvUsers.TabIndex = 12;
             this.lvUsers.UseCompatibleStateImageBehavior = false;
             this.lvUsers.View = System.Windows.Forms.View.Details;

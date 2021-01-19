@@ -28,28 +28,32 @@ namespace Sql
             InitializeComponent();
         }
 
-        private void Login_MouseMove(object sender, MouseEventArgs e)
-        {
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string ee = string.Format("server={0};uid={1};pwd={2};database={3};", txtServer.Text, txtUid.Text, txtPassword.Text, txtDatabase.Text);
-            LoginCred tt = LoginCred.GetInstance();
-            MySqlConnection dbConn;
+            if (txtUid.Text == "k702760")
+            {
+                string ee = string.Format("server={0};uid={1};pwd={2};database={3};", txtServer.Text, txtUid.Text, txtPassword.Text, txtDatabase.Text);
+                LoginCred tt = LoginCred.GetInstance();
+                MySqlConnection dbConn;
 
-            dbConn = new MySqlConnection(ee);
-            try
-            {
-                dbConn.Open();
-                tt.Creds = ee;
-                Hide();
-                Main form1 = new Main();
-                form1.Show();
+                dbConn = new MySqlConnection(ee);
+                try
+                {
+                    dbConn.Open();
+                    tt.Creds = ee;
+                    Hide();
+                    Main form1 = new Main();
+                    form1.Show();
+                }
+                catch (MySql.Data.MySqlClient.MySqlException)
+                {
+                    MessageBox.Show("False credentials", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (MySql.Data.MySqlClient.MySqlException)
+            else
             {
-                MessageBox.Show("False credentials");
+                MessageBox.Show("This is mapped (works) only for the user k702760", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -72,6 +76,5 @@ namespace Sql
             txtDatabase.Text = "world";
             button1.PerformClick();
         }
-
     }
 }
