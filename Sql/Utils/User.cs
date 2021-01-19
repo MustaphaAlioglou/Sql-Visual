@@ -99,7 +99,6 @@ namespace moose
         public void Update(string firstname, string lastname, int age)
         {
             MySqlTransaction trans = null;
-            trans = dbConn.BeginTransaction();
             try
             {
                 String query = string.Format("UPDATE Mustapha SET firstname='{0}', lastname='{1}', age ='{3}' WHERE ID={2}", firstname, lastname, Id, age);
@@ -108,7 +107,7 @@ namespace moose
                 cmd.Transaction = trans;
 
                 dbConn.Open();
-
+                trans = dbConn.BeginTransaction();
                 cmd.ExecuteNonQuery();
                 trans.Commit();
             }
@@ -124,12 +123,15 @@ namespace moose
         public void Delete()
         {
             MySqlTransaction trans = null;
-            trans = dbConn.BeginTransaction();
+
             try
             {
                 String query = string.Format("DELETE FROM Mustapha WHERE id={0}", Id);
                 MySqlCommand cmd = new MySqlCommand(query, dbConn);
+                cmd.Transaction = trans;
+
                 dbConn.Open();
+                trans = dbConn.BeginTransaction();
                 cmd.ExecuteNonQuery();
                 trans.Commit();
             }
